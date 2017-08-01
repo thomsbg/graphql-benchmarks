@@ -1,0 +1,18 @@
+{
+  "name": "graphql-benchmarks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "columnify": "^1.5.4",
+    "graphql": "^0.10.5",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blake Thomson <thomsbg@gmail.com>",
+  "license": "ISC"
+}
