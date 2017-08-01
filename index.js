@@ -134,6 +134,11 @@ const SUITE = new benchmark.Suite()
     _.graphql(SCHEMA, ID_ONLY, null, null, { count: count }).then(() => d.resolve())
   }, { defer: true })
 })
+;[10, 100, 1000, 10000].map(count => {
+  SUITE.add(`${count} objects (as json)`, function(d) {
+    JSON.stringify(DATA.slice(0, count -1 ))
+  })
+})
 SUITE.on('cycle', e => {
   console.log(e.target.toString())
 })
